@@ -25,6 +25,11 @@ namespace ATM
                     }
                     break;
                 }
+                catch (OverflowException e)
+                {
+                    Console.WriteLine("Некорректные входные данные - ");
+                    Console.WriteLine("Пожалуйста, попробуйте еще раз!");
+                }
                 catch (FormatException e)
                 {
                     Console.WriteLine("Некорректные входные данные - ");
